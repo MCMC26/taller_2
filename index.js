@@ -3,6 +3,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert');
+const createRoutes = require('./routes.js');
+
 // importar file system
 var fs = require('fs');
 const app = express();
@@ -30,8 +32,11 @@ client.connect(function(err) {
     // conectamos el cliente a la base de datos que necesitamos
     const db = client.db(dbName);
 
+  
+    createRoutes(app, db);
+
     app.listen(7000, () => {
         console.log('listening');
     });
 
-});
+});  

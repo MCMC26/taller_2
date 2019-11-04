@@ -1,0 +1,37 @@
+ <div class="navigation">
+        <div class="navigation_logo">
+            <img src="/media/page/logo.png" alt="">
+        </div>
+        <div class="navigation_menu">
+            <a href="#">Home</a>
+            <a href="#">Store</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="navigation__buttons">
+            <button class="btn">
+                 <img src="/media/page/gift_btn.png" alt="">
+            </button>
+            <button class="btn">
+                 <img src="/media/page/car_btn.png" alt="">
+            </button>
+        </div>
+ </div>
+
+
+
+{{#each products}}
+
+        <div class="generalproduct">
+            {{!-- <img src="" alt=""> --}}
+     
+           {{#each color_images}} 
+                {{!-- <img src="/media/notebooks{{color_images.images[0]}}" alt="">--}}
+                                
+           {{/each}}
+            <h3 class="tx20">{{name}}</h3>
+            {{!-- <img src="" alt=""> --}}
+            <p class="tx20">{{price}}</p>
+            <button class="btn">Agregar al carrito</button>
+        </div>
+    {{/each}}

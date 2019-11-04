@@ -1,0 +1,55 @@
+@font-face{
+    font-family: "muli";
+    src: url(/media/tipografias/Muli-Regular.ttf);
+}
+
+body{
+padding: 0px;
+margin: 0px;
+
+}
+.navigation{
+    
+    width: 100vw;
+    height: 95vh;
+    display: flex;
+    background-image: url(/media/page/bk_store_main.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    padding: 0px;
+    margin: 0px;
+}
+
+.navigation_logo{
+    margin: 20px;
+}
+.navigation_menu {
+    font-family: muli;
+    margin: 35px 35px 0px 90px;
+    
+}
+
+
+.navigation_menu a {
+    margin:0px 120px 0px 0px ;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.navigation_menu a:hover {
+    color:#EF9C00;
+    text-decoration: underline;
+}
+.navigation_buttons{
+    justify-content: flex-end;
+    padding: 0px;
+    margin: 0px 0px 0px 15px;
+}
+.btn{
+    margin: 20px 0px 0px 0px ;
+
+    background: none;
+    border: none;
+    cursor: pointer;
+}
