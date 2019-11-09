@@ -8,17 +8,28 @@ body {
   margin: 0px;
 }
 
+body .grandote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url(/media/page/bk_store_main.png);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  z-index: 0;
+}
+
 .navigation {
   width: 100vw;
   height: 95vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url(/media/page/bk_store_main.png);
-  background-repeat: no-repeat;
-  background-size: 100vw 100vh;
   padding: 0px;
-  margin: 0px;
+  margin: .3vw .3vw .3vw .8vw;
 }
 
 .navigation_logo {
@@ -55,5 +66,94 @@ body {
   background: none;
   border: none;
   cursor: pointer;
+}
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: yellowgreen;
+  width: 18vw;
+  height: 62vh;
+  padding: 2vw 2vw 1vw 2vw;
+  margin: 2vw 1vw 2vw 8vw;
+  border-radius: 2vw;
+}
+
+.product_image {
+  border-radius: 2vw;
+  margin: .02vw;
+  width: 15vw;
+  height: 15.5vw;
+}
+
+.product_tittle {
+  color: #393F87;
+  font-family: muli;
+  margin: 1vw;
+  padding: 0px;
+}
+
+.product_priceb {
+  font-family: muli;
+  margin: 0px;
+  padding: 0px;
+}
+
+.product_priced {
+  font-family: muli;
+  margin: 0px;
+  padding: 0px;
+}
+
+.product_buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn_car {
+  width: 4vw;
+  height: 4vw;
+}
+
+.btn_gift {
+  width: 4vw;
+  height: 4vw;
+}
+
+.publicity {
+  margin: 8vw;
+  z-index: 1;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 /*# sourceMappingURL=main.css.map */
