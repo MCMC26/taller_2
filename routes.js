@@ -9,7 +9,7 @@ function createRoutes (app, db) {
         
     });
 
-    app.get('/api/products', (request, response) => {
+    app.get('/api/store', (request, response) => {
         
         // seleccionamos la colección que necesitamos
         const products = db.collection('products');
@@ -27,7 +27,7 @@ function createRoutes (app, db) {
 
     })
     
-    app.get('/products', (request, response) => {
+    app.get('/store', (request, response) => {
         
         // seleccionamos la colección que necesitamos
         const products = db.collection('products');
@@ -41,14 +41,15 @@ function createRoutes (app, db) {
 
                 var context = {
                     products: result
+
                 };
 
-                response.render('product',context);
+                response.render('store',context);
             });
 
     })
 
-    app.post('/api/products', (request, response) => {
+    app.post('/api/store', (request, response) => {
         console.log(request.body);
 
         const products = db.collection('products');
@@ -58,7 +59,7 @@ function createRoutes (app, db) {
             message: 'ok',
         });
     });
-    app.get('/products', (request, response) => {
+    app.get('/store', (request, response) => {
         var id = request.params.id;
         console.log(id);
  
@@ -74,6 +75,28 @@ function createRoutes (app, db) {
                  console.log(context);
                  response.render('product', context);
          });
+    });
+    app.get('/productsDetail/:id', function (req, res) {
+        const products = db.collection('products');
+        var query= {};        
+        products.find({})
+        // transformamos el cursor a un arreglo
+        .toArray((err, result) => {
+            // asegurarnos de que noh ay error
+            
+            //
+            var c=0;
+            for(c;c<result.length;c++){
+                if(req.params.id.toString()===result[c]._id.toString()){
+                    //result[c].cartLength= cartList.length,
+                    res.render('productsDetail', result[c]);
+                }
+                
+            }
+            
+            
+        });
+        
     });
 }
 

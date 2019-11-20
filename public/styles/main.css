@@ -3,6 +3,11 @@
   src: url(/media/tipografias/Muli-Regular.ttf);
 }
 
+@font-face {
+  font-family: "mulibold";
+  src: url(/media/tipografias/Muli-Bold.ttf);
+}
+
 body {
   padding: 0px;
   margin: 0px;
@@ -123,7 +128,7 @@ body .grandote {
 
 .product_priced {
   font-family: muli;
-  margin: 0px;
+  margin: 0vw 0vw 1vw 0vw;
   padding: 0px;
 }
 
@@ -155,5 +160,30 @@ body .grandote {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer_data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#trending {
+  color: #393F87;
+  font-family: mulibold;
+  margin: 1vw;
+  padding: 0px;
 }
 /*# sourceMappingURL=main.css.map */

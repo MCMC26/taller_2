@@ -3,6 +3,11 @@
     src: url(/media/tipografias/Muli-Regular.ttf);
 }
 
+@font-face{
+    font-family: "mulibold";
+    src: url(/media/tipografias/Muli-Bold.ttf);
+}
+
 body{
 padding: 0px;
 margin: 0px;
@@ -99,7 +104,7 @@ margin: 0px;
 }
 .product_priced{
     font-family: muli;
-    margin: 0vw 0vw 1vw 0vw 
+    margin: 0vw 0vw 1vw 0vw;
     padding: 0px;
 }
 
@@ -136,4 +141,11 @@ margin: 0px;
 .footer_data{
     display: flex;
     flex-direction: column;
+}
+
+#trending{
+    color: #393F87;
+    font-family: mulibold;
+    margin: 1vw;
+    padding: 0px;
 }
