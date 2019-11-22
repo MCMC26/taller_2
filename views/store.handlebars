@@ -46,16 +46,16 @@
     {{#each products}}
         {{#if trending}}
 
-            <a class="product">
+            <div class="product">
     
               <!--  <img class="product_image" src="/media/notebooks/{{colorblue_1}}" alt=""> 
                {{color_images.[0].images.[0]}}.png
-              -->
-              <img class="product_image" src="/media/notebooks/{{color_images.[0].images.[0]}}.png" alt="">
-             
-            
-                <h3 class="product_tittle">{{name}}</h3>
+               <h3 class="product_tittle">{{name}}</h3>
                 <p>{{_id}}</p>
+              -->
+                <a class="image_btn" href="/productsDetail/{{_id}}" class="product_tittle">
+                    <img class="product_image" src="/media/notebooks/{{color_images.[0].images.[0]}}.png" alt="" >
+                </a>
                 <a href="/productsDetail/{{_id}}" class="product_tittle">{{name}}</a>
                 <p class="product_priceb">$ {{priceb}} COP</p>
                 <p class="product_priced">$ {{discount}} COP</p>
@@ -65,7 +65,7 @@
                         
                     
                 </div>
-            </a>
+            </div>
             <br>
             {{/if}}
     {{/each}}
@@ -79,16 +79,13 @@
     {{#each products}}
         {{#if trending}}
 
-            <a class="product">
+             <div class="product">
     
-              <!--  <img class="product_image" src="/media/notebooks/{{colorblue_1}}" alt=""> 
-               {{color_images.[0].images.[0]}}.png
-              -->
-              <img class="product_image" src="/media/notebooks/{{color_images.[0].images.[0]}}.png" alt="">
-             
-            
-                <h3 class="product_tittle">{{name}}</h3>
-            
+              
+                <a class="image_btn" href="/productsDetail/{{_id}}" class="product_tittle">
+                    <img class="product_image" src="/media/notebooks/{{color_images.[0].images.[0]}}.png" alt="" >
+                </a>
+                <a href="/productsDetail/{{_id}}" class="product_tittle">{{name}}</a>
                 <p class="product_priceb">$ {{priceb}} COP</p>
                 <p class="product_priced">$ {{discount}} COP</p>
                 <div class="product_ buttons">
@@ -97,6 +94,7 @@
                         
                     
                 </div>
+            </div>
             </a>
             <br>
             {{/if}}

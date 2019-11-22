@@ -107,6 +107,15 @@ body .grandote {
 }
 
 .product_image {
+  padding: 0px;
+  border: 0px;
+  padding: 0px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.product_image {
   border-radius: 2vw;
   margin: .02vw;
   width: 15vw;
