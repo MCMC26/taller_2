@@ -8,9 +8,14 @@
     src: url(/media/tipografias/Muli-Bold.ttf);
 }
 
+
 body{
-padding: 0px;
-margin: 0px;
+padding: 0vw;
+margin: 0vw;
+overflow-x:hidden;
+overflow-y:scroll;
+}
+
 
 .grandote{
     display: flex;
@@ -19,34 +24,71 @@ margin: 0px;
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
     z-index: 0;
+    width: 98.8vw;
+    height: 90vh;
+    border-radius: 0vw 0vw 1vw 1vw;
+}
+.sub_nav{
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+    border-radius: .4vw;
+    left: 20vw;
+    top: 6vw;
+    background: rgba(165, 170, 213, 0.5);
+    width: 56.5vw;
+    height: 3vw;
+}
+.sub_nav a{
+    font-family: muli;
+    display: flex;
+    font-size: 1.2vw;
+    color: white;
+    text-decoration: none;
+    padding: 0vw 2vw 0vw 2vw;
+   
+    
+}
+.sub_nav a:hover {
+    text-decoration: underline;
 }
 
-
-}
 .navigation{
     
     width: 100vw;
-    height: 95vh;
+    height: 18vh;
     display: flex;
    
-    padding: 0px;
-    margin: .3vw .3vw .3vw .8vw;
+    padding: 0vw;
+    margin: 0vw 3vw 0vw 3vw;
     
 }
 
 .navigation_logo{
-    margin: 20px;
+    margin: 2vw .5vw .3vw 4vw;
+}
+.nav_logo{
+   width: 7vw;
+   height: 4vw; 
 }
 .navigation_menu {
     font-family: muli;
-    margin: 35px 35px 0px 90px;
+    margin: 3vw 0vw 0vw 7vw;
+
+    
+}
+.navigation_menu img {
+    width: 1.2vw;
+    height: .8vw;
     
 }
 
 
 .navigation_menu a {
-    margin:0px 120px 0px 0px ;
-    font-size: 30px;
+    margin:0vw 10vw 0vw 0vw ;
+    font-size: 1.35vw;
     color: white;
     text-decoration: none;
 }
@@ -57,16 +99,21 @@ margin: 0px;
 }
 .navigation_buttons{
     justify-content: flex-end;
-    padding: 0px;
-    margin: 0px 0px 0px 15px;
+    padding: 0vw;
+    margin: 0vw 0vw 0vw 0vw;
     
 }
-.btn{
-    margin: 20px 0px 0px 0px ;
+.nav_btn{
+    margin: 2vw 0vw 0vw 0vw;
     background: none;
     border: none;
     cursor: pointer;
+  
    
+}
+.nav_imgBtn{
+    width: 4.3vw;
+    height: 4vw;
 }
 .list{
     display: flex;
@@ -85,35 +132,32 @@ margin: 0px;
     margin: 2vw 1vw 2vw 8vw;
     border-radius:2vw;
 }
+
 .product_image{
-    padding: 0px;
-    border: 0px;
-    padding: 0px;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-.product_image{
+    padding: 0vw;
     border-radius:2vw;
     margin: .02vw;
     width: 15vw;
     height: 15.5vw;
+    background: none;
+    cursor: pointer;
 }
 .product_tittle{
     color: #393F87;
-    font-family: muli;
+    font-family: mulibold;
     margin: 1vw;
-    padding: 0px;
+    padding: 0vw;
+    text-decoration: none;
 }
 .product_priceb{
     font-family: muli;
-    margin: 0px; 
-    padding: 0px;  
+    margin: 0vw; 
+    padding: 0vw;  
 }
 .product_priced{
     font-family: muli;
     margin: 0vw 0vw 1vw 0vw;
-    padding: 0px;
+    padding: 0vw;
 }
 
 .product_buttons{
@@ -155,5 +199,5 @@ margin: 0px;
     color: #393F87;
     font-family: mulibold;
     margin: 1vw;
-    padding: 0px;
+    padding: 0vw;
 }
