@@ -29,23 +29,27 @@
                     
     </div>
     <div class="publicity">
+         {{#each products}}
+            {{#if publicity}}
                 <div class="publicity_info">
-                <h1 class="publicity_tittle">
-                    NOTEBOOKS
-                </h1>
-                <h2 class="publicity_subtittle">
-                    LONELY
-                </h2 >
-                </div>
-                <p class="publicity_text">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit repellat omnis quia nisi sit, cumque facere sed sequi. 
-                </p>
-                <div class="publicity_images">
-                    <img src="" alt="">
+                    <h1 class="publicity_tittle">
+                     {{{name}}}
+                    </h1>
+                    <h2 class="publicity_subtittle">
+                        NOTEBOOKS
+                    </h2 >
+                    </div>
+                    <p class="publicity_text">
+                       {{{description}}} 
+                    </p>
+                    <div class="publicity_images">
+                        <img src="" alt="">
 
-                </div>
+                    </div>
 
-            </div>
+             </div>
+            {{/if}}
+       {{/each}}    
 
  </div>
 

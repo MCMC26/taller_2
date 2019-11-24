@@ -7,6 +7,10 @@
     font-family: "mulibold";
     src: url(/media/tipografias/Muli-Bold.ttf);
 }
+@font-face{
+    font-family: "helveticabold";
+    src: url(/media/tipografias/HelveticaWorld-Bold.ttf);
+}
 
 
 body{
@@ -125,12 +129,13 @@ overflow-y:scroll;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: yellowgreen;
+    background-color: white;
     width: 18vw;
     height: 62vh;
     padding: 2vw 2vw 1vw 2vw;
     margin: 2vw 1vw 2vw 8vw;
     border-radius:2vw;
+    box-shadow: 0vw .5vw .8vw -.6vw #000000, .2vw .5vw .10vw .8vw rgba(191,191,191,0);
 }
 
 .product_image{
@@ -150,12 +155,14 @@ overflow-y:scroll;
     text-decoration: none;
 }
 .product_priceb{
-    font-family: muli;
+    font-family: helveticabold;
     margin: 0vw; 
     padding: 0vw;  
+    text-decoration: line-through;
+    color: red;
 }
 .product_priced{
-    font-family: muli;
+    font-family: helveticabold;
     margin: 0vw 0vw 1vw 0vw;
     padding: 0vw;
 }
@@ -180,12 +187,36 @@ overflow-y:scroll;
 }
 
 .publicity{
-    margin: 8vw;
+    margin: 2vw 4vw 0vw 6vw;
     z-index:1;
     flex-direction: row;
   
 }
+.publicity_tittle{
+    padding: 0vw;
+    font-size: 3.5vw;
+    color: #fff;
+    font-family: helveticabold; 
+    margin: 0vw;
 
+
+
+}
+.publicity_subtittle{
+    padding: 0vw;
+    color: #393F87;
+    font-size: 3vw;
+    font-family: helveticabold; 
+    margin: 0vw;
+
+}
+.publicity_text{
+    margin: 0vw;
+    color: white;
+    font-family:muli;
+    font-size:2vw;
+    width: 30vw;
+}
 .footer{
     display: flex;
     flex-wrap: wrap;
