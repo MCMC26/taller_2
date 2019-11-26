@@ -69,6 +69,32 @@ overflow-y:scroll;
     margin: 0vw 3vw 0vw 3vw;
     
 }
+.navigationDetail{
+    
+    width: 100vw;
+    height: 18vh;
+    display: flex;
+   
+    padding: 0vw;
+    margin: 0vw 3vw 0vw 3vw;
+    
+}
+.grandoteDetail{
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+    width: 100vw;
+    height: 18vh;
+    border-radius: 0vw 0vw 1vw 1vw;
+    background:#070618;
+}
+.productDetail{
+    margin: 2vw 4vw 0vw 6vw;
+ 
+    flex-direction: row;
+  width:100wv;
+  height:70hv;
+}
 
 .navigation_logo{
     margin: 2vw .5vw .3vw 4vw;
@@ -107,13 +133,21 @@ overflow-y:scroll;
     margin: 0vw 0vw 0vw 0vw;
     
 }
-.nav_btn{
+.nav_btncar{
     margin: 2vw 0vw 0vw 0vw;
     background: none;
     border: none;
     cursor: pointer;
   
    
+}
+.nav_btngift{
+    margin: 2vw 0vw 0vw 0vw;
+    background: none;
+    border: none;
+    cursor: pointer;
+  
+ 
 }
 .nav_imgBtn{
     width: 4.3vw;
@@ -187,10 +221,19 @@ overflow-y:scroll;
 }
 
 .publicity{
+    display: flex;
     margin: 2vw 4vw 0vw 6vw;
     z-index:1;
     flex-direction: row;
+    justify-content: space-between;
   
+}
+.publicity_left{
+    widows: 50vw;
+    
+}
+.publicity_left{
+    widows: 50vw;
 }
 .publicity_tittle{
     padding: 0vw;
@@ -216,6 +259,44 @@ overflow-y:scroll;
     font-family:muli;
     font-size:2vw;
     width: 30vw;
+}
+.publicity_price{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+    margin: 0vw;
+    color: white;
+    font-family: helveticabold;
+    font-size:2vw;
+    width: 20vw;
+}
+
+.publicity_priceb{
+    text-decoration: line-through;
+    color: red;
+}
+.publicity_btns{
+    font-size: 3vw;
+    width:30vw;
+    height: 2vw;
+    
+}
+.publicity_btncart{
+    width: 12vw;
+    height: 2vw;
+    border-radius:4vw;
+    background-color:#EF9C00 ;
+    border-color: rgb(216, 142, 4); 
+}
+
+.publicity_btngift{
+    width: 12vw;
+    height:2vw;
+    border-radius:4vw;
+    background-color: #B2B4CA;
+    border-color:rgb(142, 145, 172); 
 }
 .footer{
     display: flex;

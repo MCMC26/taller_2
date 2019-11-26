@@ -18,12 +18,13 @@
                 <a href="#">Testing</a>
             </div>
             <div class="navigation__buttons">
-                <button class="nav_btn">
+                <button class="nav_btngift">
                     <img  class="nav_imgBtn" src="/media/page/gift_btn.png" alt="">
                 </button>
-                <button class="nav_btn">
+                <button class="nav_btncart">
                     <img class="nav_imgBtn" src="/media/page/car_btn.png" alt="">
                 </button>
+                <p class="nav_countcart">{{cartSize}}</p>
             </div>
 
                     
@@ -31,84 +32,110 @@
     <div class="publicity">
          {{#each products}}
             {{#if publicity}}
-                <div class="publicity_info">
+                <div class="publicity_left">
                     <h1 class="publicity_tittle">
                      {{{name}}}
                     </h1>
                     <h2 class="publicity_subtittle">
                         NOTEBOOKS
                     </h2 >
-                    </div>
+                
                     <p class="publicity_text">
                        {{{description}}} 
                     </p>
-                    <div class="publicity_images">
+                    <div class="publicity_price">
+                        <P class="publicity_priceb">
+                        ${{{priceb}}} 
+                        </p>
+                        <P>
+                            ${{{discount}}}
+                        </P>
+                    </div>
+                    <div class="publicity_btns">
+                        <button class="publicity_btncart">
+                            Add to cart
+                        </button>
+                        <button class="publicity_btngift">
+                             Add to gift
+                        </button>
+
+                    </div>
+                </div>  
+                <div class="publicity_right"> 
+                    <div class="publicity_principalimg">
+                        <img class="" src="/media/notebooks/{{color_images.[0].images.[0]}}.png" alt=""> 
+                
+                    </div>
+                    <div class="publicity_secundaryimgs">
                         <img src="" alt="">
 
                     </div>
-
-             </div>
+                </div>
+            
             {{/if}}
        {{/each}}    
 
  </div>
+<div class="Allproducts">
+    <H1 id="trending"> Trending Products</H1>
+    <div class="list">
+        {{#each products}}
+            {{#if trending}}
 
-<H1 id="trending"> Trending Products</H1>
-<div class="list">
-    {{#each products}}
-        {{#if trending}}
-
-            <div class="product">
-    
-              <!--  <img class="product_image" src="/media/notebooks/{{colorblue_1}}" alt=""> 
-               {{color_images.[0].images.[0]}}.png
-               <h3 class="product_tittle">{{name}}</h3>
-                <p>{{_id}}</p>
-              -->
-                <a class="image_btn" href="/productsDetail/{{_id}}" class="product_tittle">
-                    <img class="product_image" src="/media/notebooks/{{color_images.[0].images.[0]}}.png" alt="" >
-                </a>
-                <a href="/productsDetail/{{_id}}" class="product_tittle">{{name}}</a>
-                <p class="product_priceb">$ {{priceb}} COP</p>
-                <p class="product_priced">$ {{discount}} COP</p>
-                <div class="product_ buttons">
-                    <input class="btn_car" type="image" src="/media/page/car_btn.png">                        
-                    <input class="btn_gift" type="image" src="/media/page/gift_btn.png">
+                <div class="product">
+        
+                <!--  <img class="product_image" src="/media/notebooks/{{colorblue_1}}" alt=""> 
+                {{color_images.[0].images.[0]}}.png
+                <h3 class="product_tittle">{{name}}</h3>
+                    <p>{{_id}}</p>
+                -->
+                    <a class="image_btn" href="/productsDetail/{{_id}}" class="product_tittle">
+                        <img class="product_image" src="/media/notebooks/{{color_images.[0].images.[0]}}.png" alt="" >
+                    </a>
+                    <a href="/productsDetail/{{_id}}" class="product_tittle">{{name}}</a>
+                    <p class="product_priceb">$ {{priceb}} COP</p>
+                    <p class="product_priced">$ {{discount}} COP</p>
+                    <div class="product_ buttons">
+                        <input class="btn_car" data-name="{{this._id}}" type="image" src="/media/page/car_btn.png">                    
+                        <input class="btn_gift" type="image" src="/media/page/gift_btn.png">
+                            
                         
-                    
+                    </div>
                 </div>
-            </div>
-            <br>
-            {{/if}}
-    {{/each}}
- </div>
- 
-
-<H1 id=""></H1>
-
-
- <div class="list">
-    {{#each products}}
-        {{#if trending}}
-
-             <div class="product">
+                <br>
+                {{/if}}
+        {{/each}}
+    </div>
     
-              
-                <a class="image_btn" href="/productsDetail/{{_id}}" class="product_tittle">
-                    <img class="product_image" src="/media/notebooks/{{color_images.[0].images.[0]}}.png" alt="" >
-                </a>
-                <a href="/productsDetail/{{_id}}" class="product_tittle">{{name}}</a>
-                <p class="product_priceb">$ {{priceb}} COP</p>
-                <p class="product_priced">$ {{discount}} COP</p>
-                <div class="product_ buttons">
-                    <input class="btn_car" type="image" src="/media/page/car_btn.png">                        
-                    <input class="btn_gift" type="image" src="/media/page/gift_btn.png">
+
+
+    <H1 id=""></H1>
+
+
+    <div class="list">
+        {{#each products}}
+            {{#if trending}}
+
+                <div class="product">
+        
+                
+                    <a class="image_btn" href="/productsDetail/{{_id}}" class="product_tittle">
+                        <img class="product_image" src="/media/notebooks/{{color_images.[0].images.[0]}}.png" alt="" >
+                    </a>
+                    <a href="/productsDetail/{{_id}}" class="product_tittle">{{name}}</a>
+                    <p class="product_priceb">$ {{priceb}} COP</p>
+                    <p class="product_priced">$ {{discount}} COP</p>
+                    <div class="product_ buttons">
+                        <input class="btn_car" data-name="{{this._id}}" type="image" src="/media/page/car_btn.png"> 
+                                            
+                        <input class="btn_gift" type="image" src="/media/page/gift_btn.png">
+                            
                         
-                    
+                    </div>
                 </div>
-            </div>
-            </a>
-            <br>
-            {{/if}}
-    {{/each}}
- </div>
+                </a>
+                <br>
+                {{/if}}
+        {{/each}}
+    </div>
+</div>    
