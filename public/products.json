@@ -1,201 +1,223 @@
 [
-    {
-      "type": "notebook",
-      "name": "constelacion",
-      "price before": 80499,
-      "discount":90604,
-      "description": "Este cuaderno cuenta con 288 páginas en blanco, alineadas, semanales + cuadricula, de  material PU, con un tamaño de 105 x 140 mm ",
-      "color": [
-        "blue", 
-        "pink"
-      ],
-
-      "color_images": [
-        {
-            "color": "blue",
-            "images": [
-                "notebook_constelacion_01", 
-                "notebook_constelacion_02",
-                "notebook_constelacion_03",
-                "notebook_constelacion_04"
-            ]
-        }  ,
-        
-        {
-            "color": "pink",
-            "images": [
-                "notebook_constelacion_01", 
-                "notebook_constelacion_02",
-                "notebook_constelacion_03",
-                "notebook_constelacion_04"
-            ]
-        }  
-      ]
-     
-    },
-    {
-      "type": "notebook",
-      "name": "dark galaxy",
-      "price before": 90604,
-      "discount":80499,
-      "description": "Este cuaderno cuenta con 192 páginas en blanco,de color negro, con un material de tapa dura, y con un tamaño de 192 x 131 mm ",
-      "color": [
-        "blue", 
-        "pink"
-      ],
-
-      "color_images": [
-        {
-            "color": "blue",
-            "images": [
-                "notebook_dark_galaxy_01", 
-                "notebook_dark_galaxy_02",
-                "notebook_dark_galaxy_03",
-                "notebook_constelacion_04"
-            ]
-        }  ,
-        
-        {
-            "color": "blue",
-            "images": [
-              "notebook_dark_galaxy_01", 
-              "notebook_dark_galaxy_02",
-              "notebook_dark_galaxy_03",
-              "notebook_constelacion_04"
-            ]
-        }  
-      ]
-    },
-
-    {
-      "type": "notebook",
-      "name": "dreamy night",
-      "price before":93900,
-      "discount":73000,
-      "description": "Este cuaderno cuenta con 224 páginas artisticas, con un material de tapa dura, y con un tamaño de 130 x 185 mm ",
-      "color": [
-        "blue", 
-        "pink"
-      ],
-
-      "color_images": [
-        {
-            "color": "blue",
-            "images": [
-                "notebook_dreamy_night_01", "notebook_dreamy_night_02",
-                "notebook_dreamy_night_03",
-                "notebook_dreamy_night_05"
-            ]
-        }  ,
-        
-        {
-            "color": "blue",
-            "images": [
-              "notebook_dreamy_night_01", "notebook_dreamy_night_02",
-              "notebook_dreamy_night_03",
-              "notebook_dreamy_night_05"
-            ]
-        }  
-      ]
-    },
-    {
-      "type": "notebook",
-      "name": "dotted bullet",
-      "price before":49800,
-      "discount":36800,
-      "description": "Este diario cuenta con 84 páginas artisticas, y con un tamaño de 208 x 104 mm ",
-      "color": [
-        "blue", 
-        "pink"
-      ],
-
-      "color_images": [
-        {
-            "color": "blue",
-            "images": [
-                "notebook_dotted_bullet_01", "notebook_dotted_bullet_02",
-                "notebook_dotted_bullet_03",
-                "notebook_dotted_bullet_04"
-          ]  
-                } ,
-        
-        {
-            "color": "blue",
-            "images": [
-              "notebook_dotted_bullet_01",   
-              "notebook_dotted_bullet_02",
-              "notebook_dotted_bullet_03",
-              "notebook_dotted_bullet_04"
-            ]
-          }
-       ]
-    },
-    {
-      "type": "notebook",
-      "name": "pastel planners",
-      "price before":47600,
-      "discount":46900,
-      "description": "Este planeador cuenta con 230 páginas artisticas, y con un tamaño de 17 x 12 cm ",
-      "color": [
-        "blue", 
-        "pink"
-      ],
-
-      "color_images": [
-        {
-            "color": "blue",
-            "images": [
-                "notebook_pastel_planners_01", 
-                "notebook_pastel_planners_02",
-                "notebook_pastel_planners_03",
-                "notebook_pastel_planners_04"
-          ]  
-                } ,
-        
-        {
-            "color": "blue",
-            "images": [
-            "notebook_dotted_bullet_01",  
-            "notebook_dotted_bullet_02",
-            "notebook_dotted_bullet_03",
-            "notebook_dotted_bullet_04"
-            ]
-          }
+  {
+    "type": "notebook",
+    "trending": true,
+    "name": "other planners",
+    "priceb": 47600.0,
+    "discount": 46900.0,
+    "description": "Este planeador cuenta con 230 páginas artisticas, y con un tamaño de 17 x 12 cm.",
+    "color": [
+      "blue",
+      "pink"
+    ],
+    "color_images": [
+      {
+        "color": "blue",
+        "images": [
+          "notebook_pastel_planners_01",
+          "notebook_pastel_planners_02",
+          "notebook_pastel_planners_03",
+          "notebook_pastel_planners_04"
         ]
-    },
-    {
-      "type": "notebook",
-      "name": "other planners",
-      "price before":47600,
-      "discount":46900,
-      "description": "Este planeador cuenta con 230 páginas artisticas, y con un tamaño de 17 x 12 cm ",
-      "color": [
-        "blue", 
-        "pink"
-      ],
-
-      "color_images": [
-        {
-            "color": "blue",
-            "images": [
-                "notebook_pastel_planners_01", 
-                "notebook_pastel_planners_02",
-                "notebook_pastel_planners_03",
-                "notebook_pastel_planners_04"
-          ]  
-                } ,
-        
-        {
-            "color": "blue",
-            "images": [
-            "notebook_dotted_bullet_01",  
-            "notebook_dotted_bullet_02",
-            "notebook_dotted_bullet_03",
-            "notebook_dotted_bullet_04"
-            ]
-          }
+      },
+      {
+        "color": "blue",
+        "images": [
+          "notebook_dotted_bullet_01",
+          "notebook_dotted_bullet_02",
+          "notebook_dotted_bullet_03",
+          "notebook_dotted_bullet_04"
         ]
-    }
-
-
+      }
+    ]
+  },
+  {
+    "type": "notebook",
+    "trending": "true",
+    "name": "dark galaxy",
+    "priceb": 90604.0,
+    "discount": 80499.0,
+    "description": "Este cuaderno cuenta con 192 páginas en blanco,de color negro, con un material de tapa dura, y con un tamaño de 192 x 131 mm ",
+    "color": [
+      "blue",
+      "pink"
+    ],
+    "color_images": [
+      {
+        "color": "blue",
+        "images": [
+          "notebook_dark_galaxy_01",
+          "notebook_dark_galaxy_02",
+          "notebook_dark_galaxy_03",
+          "notebook_constelacion_04"
+        ]
+      },
+      {
+        "color": "blue",
+        "images": [
+          "notebook_dark_galaxy_01",
+          "notebook_dark_galaxy_02",
+          "notebook_dark_galaxy_03",
+          "notebook_constelacion_04"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "notebook",
+    "name": "dreamy night",
+    "priceb": 93900.0,
+    "discount": 73000.0,
+    "description": "Este cuaderno cuenta con 224 páginas artisticas, con un material de tapa dura, y con un tamaño de 130 x 185 mm ",
+    "color": [
+      "blue",
+      "pink"
+    ],
+    "color_images": [
+      {
+        "color": "blue",
+        "images": [
+          "notebook_dreamy_night_01",
+          "notebook_dreamy_night_02",
+          "notebook_dreamy_night_03",
+          "notebook_dreamy_night_05"
+        ]
+      },
+      {
+        "color": "blue",
+        "images": [
+          "notebook_dreamy_night_01",
+          "notebook_dreamy_night_02",
+          "notebook_dreamy_night_03",
+          "notebook_dreamy_night_05"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "notebook",
+    "new": "true",
+    "name": "dotted bullet",
+    "priceb": 49800.0,
+    "discount": 36800.0,
+    "description": "Este diario cuenta con 84 páginas artisticas, y con un tamaño de 208 x 104 mm ",
+    "color": [
+      "blue",
+      "pink"
+    ],
+    "color_images": [
+      {
+        "color": "blue",
+        "images": [
+          "notebook_dotted_bullet_01",
+          "notebook_dotted_bullet_02",
+          "notebook_dotted_bullet_03",
+          "notebook_dotted_bullet_04"
+        ]
+      },
+      {
+        "color": "blue",
+        "images": [
+          "notebook_dotted_bullet_01",
+          "notebook_dotted_bullet_02",
+          "notebook_dotted_bullet_03",
+          "notebook_dotted_bullet_04"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "notebook",
+    "name": "pastel planners",
+    "priceb": 47600.0,
+    "discount": 46900.0,
+    "description": "Este planeador cuenta con 230 páginas artisticas, y con un tamaño de 17 x 12 cm ",
+    "color": [
+      "blue",
+      "pink"
+    ],
+    "color_images": [
+      {
+        "color": "blue",
+        "images": [
+          "notebook_pastel_planners_01",
+          "notebook_pastel_planners_02",
+          "notebook_pastel_planners_03",
+          "notebook_pastel_planners_04"
+        ]
+      },
+      {
+        "color": "blue",
+        "images": [
+          "notebook_dotted_bullet_01",
+          "notebook_dotted_bullet_02",
+          "notebook_dotted_bullet_03",
+          "notebook_dotted_bullet_04"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "notebook",
+    "name": "other planners",
+    "priceb": 47600.0,
+    "discount": 46900.0,
+    "description": "Este planeador cuenta con 230 páginas artisticas, y con un tamaño de 17 x 12 cm ",
+    "color": [
+      "blue",
+      "pink"
+    ],
+    "color_images": [
+      {
+        "color": "blue",
+        "images": [
+          "notebook_pastel_planners_01",
+          "notebook_pastel_planners_02",
+          "notebook_pastel_planners_03",
+          "notebook_pastel_planners_04"
+        ]
+      },
+      {
+        "color": "blue",
+        "images": [
+          "notebook_dotted_bullet_01",
+          "notebook_dotted_bullet_02",
+          "notebook_dotted_bullet_03",
+          "notebook_dotted_bullet_04"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "notebook",
+    "publicity": true,
+    "name": "Dark-Plants",
+    "priceb": 50000.0,
+    "discount": 42000.0,
+    "description": "Este planeador cuenta con 230 páginas artisticas, y con un tamaño de 17 x 12 cm. Perfecto para plasmar ideas, bocetar y/u organizarte.",
+    "color": [
+      "blue",
+      "pink"
+    ],
+    "color_images": [
+      {
+        "color": "blue",
+        "images": [
+          "notebook_dark_plants_01",
+          "notebook_dark_plants_02",
+          "notebook_dark_plants_03",
+          "notebook_dark_plants_04"
+        ]
+      },
+      {
+        "color": "blue",
+        "images": [
+          "notebook_dotted_bullet_01",
+          "notebook_dotted_bullet_02",
+          "notebook_dotted_bullet_03",
+          "notebook_dotted_bullet_04"
+        ]
+      }
+    ]
+  }
 ]
