@@ -222,18 +222,33 @@ overflow-y:scroll;
 
 .publicity{
     display: flex;
-    margin: 2vw 4vw 0vw 6vw;
+    margin: 2vw 4vw 2vw 6vw;
     z-index:1;
     flex-direction: row;
     justify-content: space-between;
+    height:80vh;
   
 }
 .publicity_left{
-    widows: 50vw;
+    width: 50vw;
     
 }
-.publicity_left{
-    widows: 50vw;
+.publicity_right{
+    width: 50vw;
+  
+}
+.publicity_principalimg{
+    height: 80hv;
+
+}
+.principal{
+    padding: 0vw;
+    border-radius:3vw;
+    margin: .02vw;
+    width: 26vw;
+    height: 23vw;
+    background: none;
+    cursor: pointer;
 }
 .publicity_tittle{
     padding: 0vw;

@@ -176,20 +176,23 @@ function createRoutes (app, db) {
 
     })
     
-    app.get('/notebooks', (request, response) => {
+    app.get('/store/:type', (request, response) => {
         
         // seleccionamos la colección que necesitamos
         const products = db.collection('products');
 
         // buscamos todos los productos
-        products.find({type:'notebooks'})
+        products.find({type: request.params.type})
             // transformamos el cursor a un arreglo
             .toArray((err, result) => {
                 // asegurarnos de que no hay error
                 assert.equal(null, err);
 
+                console.log(result)
+
                 var context = {
-                    products: result
+                    products: result,
+                    type:request.params.type
 
                 };
 
