@@ -27,6 +27,28 @@ function createRoutes (app, db) {
             });
 
     })
+    app.get('/testing', (request, response) => {
+        
+        // seleccionamos la colección que necesitamos
+        const products = db.collection('products');
+
+        // buscamos todos los productos
+        products.find({})
+            // transformamos el cursor a un arreglo
+            .toArray((err, result) => {
+                // asegurarnos de que no hay error
+                assert.equal(null, err);
+
+                var context = {
+                    products: result
+
+                };
+
+                response.render('testing',context);
+            });
+
+    })
+    
     
     app.get('/store', (request, response) => {
         
