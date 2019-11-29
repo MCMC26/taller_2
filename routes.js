@@ -104,6 +104,44 @@ function createRoutes (app, db) {
         });
         
     });
+    app.post('/api/orders',(request,response)=>{
+        const cart = db.collection('products'); //selecciono la colección de la base de datos
+        const buycart = db.collection('orders');
+    
+        cart.find({}).toArray((err, result) => {
+            assert.equal(null, err);
+    
+            var car = result[0];
+    request.body.products = car.products;
+    buycart.insertOne(request.body);
+    
+    response.send({
+        message: 'ok'
+    });
+    
+        });
+    
+        
+    });
+    app.get('/orders', (request, response) => {
+        // seleccionamos la colección que necesitamos
+        const products = db.collection('products');
+
+        // buscamos todos los productos
+        products.find({})
+            // transformamos el cursor a un arreglo
+            .toArray((err, result) => {
+                // asegurarnos de que no hay error
+                assert.equal(null, err);
+                
+                var context = {
+                    products: result
+                };
+
+                response.render('form',context);
+            });
+       
+   });
      app.get('/testing', (request, response) => {
         
         // seleccionamos la colección que necesitamos

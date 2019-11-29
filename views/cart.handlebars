@@ -38,14 +38,13 @@
                     <a href="/productsDetail/{{_id}}" class="product_tittle">{{name}}</a>
                     <p class="product_priceb">$ {{priceb}} COP</p>
                     <p class="product_priced">$ {{discount}} COP</p>
-                    <div class="product_ buttons">
-                        <input class="btn_car" data-name="{{this._id}}" type="image" src="/media/page/car_btn.png">                 
-                        <input class="btn_gift" type="image" src="/media/page/gift_btn.png">
-                            
-                        
-                    </div>
+                    
                 </div>
                 <br>
                
         {{/each}}
     </div>
+    <a class="btn_buy" href="/orders">
+                        <img class="buy_imgBtn" src="/media/page/buy_btn.png" alt="">
+                       
+     </a>

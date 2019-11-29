@@ -91,6 +91,10 @@ body {
   overflow-y: scroll;
 }
 
+.foot_img {
+  width: 100vw;
+}
+
 .grandote {
   display: -webkit-box;
   display: -ms-flexbox;
