@@ -1,4 +1,3 @@
-@import 'testing';
 
 @font-face{
     font-family: "muli";
@@ -14,14 +13,19 @@
     src: url(/media/tipografias/HelveticaWorld-Bold.ttf);
 }
 
+@import 'testing';
+@import 'header';
+@import 'publicity';
+@import 'listproduct';
+@import 'footer';
 
 body{
+ position: relative;
 padding: 0vw;
 margin: 0vw;
 overflow-x:hidden;
 overflow-y:scroll;
 }
-
 
 .grandote{
     display: flex;
@@ -71,33 +75,6 @@ overflow-y:scroll;
     margin: 0vw 3vw 0vw 3vw;
     
 }
-.navigationDetail{
-    
-    width: 100vw;
-    height: 18vh;
-    display: flex;
-   
-    padding: 0vw;
-    margin: 0vw 3vw 0vw 3vw;
-    
-}
-.grandoteDetail{
-    display: flex;
-    flex-direction: column;
-    z-index: 0;
-    width: 100vw;
-    height: 18vh;
-    border-radius: 0vw 0vw 1vw 1vw;
-    background:#070618;
-}
-.productDetail{
-    margin: 2vw 4vw 0vw 6vw;
- 
-    flex-direction: row;
-  width:100wv;
-  height:70hv;
-}
-
 .navigation_logo{
     margin: 2vw .5vw .3vw 4vw;
 }
@@ -130,97 +107,40 @@ overflow-y:scroll;
     text-decoration: underline;
 }
 .navigation_buttons{
+    display: flex;
+    position: absolute;
+    flex-direction: row;
     justify-content: flex-end;
+
+    left: 80vw;
+    top: 4vw;   
     padding: 0vw;
-    margin: 0vw 0vw 0vw 0vw;
+    margin: 0vw;
+    
+   
     
 }
 .nav_btncar{
-    margin: 2vw 0vw 0vw 0vw;
-    background: none;
-    border: none;
-    cursor: pointer;
-  
-   
-}
-.nav_btngift{
-    margin: 2vw 0vw 0vw 0vw;
-    background: none;
-    border: none;
-    cursor: pointer;
-  
- 
-}
-.nav_imgBtn{
-    width: 4.3vw;
-    height: 4vw;
-}
-.list{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-self: center;
-}
-.product{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: white;
-    width: 18vw;
-    height: 62vh;
-    padding: 2vw 2vw 1vw 2vw;
-    margin: 2vw 1vw 2vw 8vw;
-    border-radius:2vw;
-    box-shadow: 0vw .5vw .8vw -.6vw #000000, .2vw .5vw .10vw .8vw rgba(191,191,191,0);
-}
-
-.product_image{
-    padding: 0vw;
-    border-radius:2vw;
-    margin: .02vw;
-    width: 15vw;
-    height: 15.5vw;
-    background: none;
-    cursor: pointer;
-}
-.product_tittle{
-    color: #393F87;
-    font-family: mulibold;
-    margin: 1vw;
-    padding: 0vw;
-    text-decoration: none;
-}
-.product_priceb{
-    font-family: helveticabold;
-    margin: 0vw; 
-    padding: 0vw;  
-    text-decoration: line-through;
-    color: red;
-}
-.product_priced{
-    font-family: helveticabold;
-    margin: 0vw 0vw 1vw 0vw;
-    padding: 0vw;
-}
-
-.product_buttons{
-    display: flex;
-    flex-wrap: nowrap;
-    background: none;
-    border: none;
-    cursor: pointer;
-   
     
+    margin: 2vw 0vw 0vw 0vw;
+    background: none;
+    border: none;
+    cursor: pointer;
+  
+   
+}
 
-}
-.btn_car{
-    width: 4vw;
+.nav_imgBtn{
+    margin-top: 50px;
+    width: 8vw;
     height: 4vw;
 }
-.btn_gift{
-    width: 4vw;
-    height: 4vw;
+.nav_countcart{
+    
 }
+
+
+
 
 .publicity{
     display: flex;
@@ -246,15 +166,7 @@ overflow-y:scroll;
     
 
 }
-.principal{
-    padding: 0vw;
-    border-radius:3vw;
-    margin: .02vw;
-    width: 26vw;
-    height: 23vw;
-    background: none;
-    cursor: pointer;
-}
+
 .publicity_tittle{
     padding: 0vw;
     font-size: 3.5vw;
@@ -318,21 +230,128 @@ overflow-y:scroll;
     background-color: #B2B4CA;
     border-color:rgb(142, 145, 172); 
 }
-.footer{
-    display: flex;
-    flex-wrap: wrap;
+.principal{
+    padding: 0vw;
+    border-radius:2vw;
+    margin: .02vw;
+    width: 26vw;
+    height: 23vw;
+    background: none;
+    cursor: pointer;
 }
-.footer_data{
-    display: flex;
-    flex-direction: column;
+.publicity_secundaryimgs img{
+    padding: 0vw;
+    border-radius:2vw;
+    margin: .02vw;
+    width: 8vw;
+    height: 8.5vw;
+    background: none;
+    cursor: pointer;
+
 }
 
+
+
+
+
+
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 18vw;
+    height: 62vh;
+    padding: 2vw 2vw 1vw 2vw;
+    margin: 2vw 1vw 2vw 8vw;
+    border-radius:2vw;
+    box-shadow: 0vw .5vw .8vw -.6vw #000000, .2vw .5vw .10vw .8vw rgba(191,191,191,0);
+}
 #trending{
     color: #393F87;
     font-family: mulibold;
     margin: 1vw;
     padding: 0vw;
 }
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-self: center;
+}
+.product_image{
+    padding: 0vw;
+    border-radius:2vw;
+    margin: .02vw;
+    width: 15vw;
+    height: 15.5vw;
+    background: none;
+    cursor: pointer;
+}
+.product_tittle{
+    color: #393F87;
+    font-family: mulibold;
+    margin: 1vw;
+    padding: 0vw;
+    text-decoration: none;
+}
+.product_priceb{
+    font-family: helveticabold;
+    margin: 0vw; 
+    padding: 0vw;  
+    text-decoration: line-through;
+    color: red;
+}
+.product_priced{
+    font-family: helveticabold;
+    margin: 0vw 0vw 1vw 0vw;
+    padding: 0vw;
+}
+
+.product_buttons{
+    display: flex;
+    flex-wrap: nowrap;
+    background: none;
+    border: none;
+    cursor: pointer;
+   
+    
+
+}
+.btn_car{
+    width: 4vw;
+    height: 4vw;
+}
+.btn_gift{
+    width: 4vw;
+    height: 4vw;
+}
 
 
 
+.navigationDetail{
+    
+    width: 100vw;
+    height: 18vh;
+    display: flex;
+   
+    padding: 0vw;
+    margin: 0vw 3vw 0vw 3vw;
+    
+}
+.grandoteDetail{
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+    width: 99vw;
+    height: 24vh;
+    border-radius: 0vw 0vw 1vw vw;
+    background:#070618;
+}
+.productDetail{
+    margin: 2vw 4vw 0vw 6vw;
+ 
+    flex-direction: row;
+  width:100wv;
+  height:70hv;
+}

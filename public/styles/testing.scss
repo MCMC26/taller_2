@@ -9,6 +9,7 @@
     background-color: #444444;
     overflow: auto;
 }
+
  
 .toolbar a {
     float: left;
@@ -26,13 +27,14 @@
  
 /* Change color on selected icon */
 .selected {
-    background-color: #000; 
+    background-color: #8188C4; 
 }
  
 #my-canvas{
     width: 90vw;
     height: 90vw;
-    border: 3px solid #000000;
+    border-radius:2vw;
+    box-shadow: 0vw .5vw .8vw -.6vw #000000, .2vw .5vw .10vw .8vw rgba(191,191,191,0);
 }
  
 #img-data-div{

@@ -18,13 +18,11 @@
                     <a href="#">Testing</a>
                 </div>
                 <div class="navigation__buttons">
-                    <button class="nav_btngift">
-                        <img  class="nav_imgBtn" src="/media/page/gift_btn.png" alt="">
-                    </button>
-                    <button class="nav_btncart">
+                    
+                    <a class="nav_btncart" href="/cart">
                         <img class="nav_imgBtn" src="/media/page/car_btn.png" alt="">
-                    </button>
-                    <p class="nav_countcart">{{cartSize}}</p>
+                    </a>
+                    <p class="nav_cant">{{carS}}</p>
                 </div>
 
                         
@@ -69,7 +67,10 @@
                         </div>
                         <div class="publicity_down">
                             <div class="publicity_secundaryimgs">
-                                <img src="" alt="">
+                                    <img class="miniature" src="/media/notebooks/{{color_images.[0].images.[0]}}.png" alt="">
+                                    <img  class="miniature" src="/media/notebooks/{{color_images.[0].images.[1]}}.png" alt="">
+                                    <img class="miniature" src="/media/notebooks/{{color_images.[0].images.[2]}}.png" alt="">
+                                
                             </div>
                         </div>
                         
@@ -100,7 +101,7 @@
                     <p class="product_priceb">$ {{priceb}} COP</p>
                     <p class="product_priced">$ {{discount}} COP</p>
                     <div class="product_ buttons">
-                        <input class="btn_car" data-name="{{this._id}}" type="image" src="/media/page/car_btn.png">                    
+                        <input class="btn_car" data-name="{{this._id}}" type="image" src="/media/page/car_btn.png">                 
                         <input class="btn_gift" type="image" src="/media/page/gift_btn.png">
                             
                         
@@ -143,3 +144,5 @@
         {{/each}}
     </div>
 </div>    
+    <script src="/scripts/addCart.js"></script>
+

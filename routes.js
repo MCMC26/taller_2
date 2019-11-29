@@ -27,27 +27,7 @@ function createRoutes (app, db) {
             });
 
     })
-    app.get('/testing', (request, response) => {
-        
-        // seleccionamos la colección que necesitamos
-        const products = db.collection('products');
-
-        // buscamos todos los productos
-        products.find({})
-            // transformamos el cursor a un arreglo
-            .toArray((err, result) => {
-                // asegurarnos de que no hay error
-                assert.equal(null, err);
-
-                var context = {
-                    products: result
-
-                };
-
-                response.render('testing',context);
-            });
-
-    })
+   
     
     
     app.get('/store', (request, response) => {
@@ -121,6 +101,27 @@ function createRoutes (app, db) {
         });
         
     });
+     app.get('/testing', (request, response) => {
+        
+        // seleccionamos la colección que necesitamos
+        const products = db.collection('products');
+
+        // buscamos todos los productos
+        products.find({})
+            // transformamos el cursor a un arreglo
+            .toArray((err, result) => {
+                // asegurarnos de que no hay error
+                assert.equal(null, err);
+
+                var context = {
+                    products: result
+
+                };
+
+                response.render('testing',context);
+            });
+
+    })
 
     app.post('/api/cart/:id', (request, response) => {
         var id = request.params.id;
@@ -180,6 +181,28 @@ function createRoutes (app, db) {
         
         
     });
+    app.get('/cart', (request, response) => {
+        
+        // buscamos todos los productos
+        var listCopy = cartList.slice();
+        var price=0;
+        var cantidad2=0;
+        if(listCopy!=null){
+            for(var i=0;i<listCopy.length;i++){
+                price+=listCopy[i].price*listCopy[i].cantidad;
+                
+            }
+        }
+        
+        const context={
+            products:listCopy,
+            total:price,
+        }
+    
+        
+        response.render('cart',context);
+
+    })
     app.get('/api/notebooks', (request, response) => {
         
         // seleccionamos la colección que necesitamos

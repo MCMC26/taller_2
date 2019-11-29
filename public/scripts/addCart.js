@@ -1,11 +1,10 @@
-window.addEventListener('load',function(){
-    var btnsAddcar =document.querySelectorAll('.btn_car');
-    var cartSize =document.querySelectorAll('.nav_countcart');
+console.log("hola");
 
+    var btnsAddcar =document.querySelectorAll('.btn_car');
+    var cartSize =document.querySelector('.nav_cant')
     btnsAddcar.forEach(function(btn){
         btn.addEventListener('click', function (event){
             event.preventDefault();
-            console.log("hiiiiiiiiiii");
 
             var id =btn.getAttribute('data-name');
 
@@ -17,9 +16,7 @@ window.addEventListener('load',function(){
             })
             .then(function(data){
                 console.log(data);
-                return innerText = data.cartSize;
+                cartSize.innerText = data.cartSize;
             });
         });
     });
-
-});

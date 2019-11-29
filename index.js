@@ -18,8 +18,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
 
-const url = 'mongodb+srv://Mila_26pg:Jeremias1510@cluster0-dwkof.mongodb.net/test?retryWrites=true&w=majority';
-const dbName = 'serverstore';
+//const url = 'mongodb+srv://Mila_26pg:Jeremias1510@cluster0-dwkof.mongodb.net/test?retryWrites=true&w=majority';
+const url = 'mongodb://localhost:27017';
+const dbName = 'store';
 const client = new MongoClient(url);
 
 // conectar el cliente de mongo
