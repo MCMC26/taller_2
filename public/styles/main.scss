@@ -159,10 +159,7 @@ overflow-y:scroll;
 .publicitty_up{
     height: 80hv;
 }
-.publicity_principalimg{
-    
 
-}
 
 .publicity_tittle{
     padding: 0vw;
@@ -206,27 +203,13 @@ overflow-y:scroll;
     text-decoration: line-through;
     color: red;
 }
-.publicity_btns{
+.publicity_btn{
     font-size: 3vw;
     width:30vw;
     height: 2vw;
     
 }
-.publicity_btncart{
-    width: 12vw;
-    height: 2vw;
-    border-radius:4vw;
-    background-color:#EF9C00 ;
-    border-color: rgb(216, 142, 4); 
-}
 
-.publicity_btngift{
-    width: 12vw;
-    height:2vw;
-    border-radius:4vw;
-    background-color: #B2B4CA;
-    border-color:rgb(142, 145, 172); 
-}
 .principal{
     padding: 0vw;
     border-radius:2vw;
@@ -249,7 +232,10 @@ overflow-y:scroll;
 
 
 
-
+#btn_detail{
+    width: 20vw;
+    height: 6vh;
+}
 
 
 .product{
@@ -291,6 +277,7 @@ overflow-y:scroll;
     margin: 1vw;
     padding: 0vw;
     text-decoration: none;
+    font-size:2vw;
 }
 .product_priceb{
     font-family: helveticabold;
@@ -298,11 +285,13 @@ overflow-y:scroll;
     padding: 0vw;  
     text-decoration: line-through;
     color: red;
+    font-size: 1.5vw;
 }
 .product_priced{
     font-family: helveticabold;
     margin: 0vw 0vw 1vw 0vw;
     padding: 0vw;
+    font-size: 1.5vw;
 }
 
 .product_buttons{
@@ -316,13 +305,10 @@ overflow-y:scroll;
 
 }
 .btn_car{
-    width: 4vw;
+    width: 8vw;
     height: 4vw;
 }
-.btn_gift{
-    width: 4vw;
-    height: 4vw;
-}
+
 
 
 
@@ -331,19 +317,18 @@ overflow-y:scroll;
     width: 100vw;
     height: 18vh;
     display: flex;
-   
-    padding: 0vw;
-    margin: 0vw 3vw 0vw 3vw;
+    background:#070618;
+    padding-bottom: 3vw;
+    margin: 0vw;
     
 }
 .grandoteDetail{
     display: flex;
     flex-direction: column;
-    z-index: 0;
-    width: 99vw;
+    width: 100vw;
     height: 24vh;
     border-radius: 0vw 0vw 1vw vw;
-    background:#070618;
+    
 }
 .productDetail{
     margin: 2vw 4vw 0vw 6vw;

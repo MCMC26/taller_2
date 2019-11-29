@@ -36,7 +36,7 @@ client.connect(function(err) {
   
     createRoutes(app, db);
 
-    app.listen(process.env.PORT || 7000, () => {
+    app.listen(process.env.PORT || 9000, () => {
         console.log('listening');
     });
 

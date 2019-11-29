@@ -293,26 +293,10 @@ body {
   color: red;
 }
 
-.publicity_btns {
+.publicity_btn {
   font-size: 3vw;
   width: 30vw;
   height: 2vw;
-}
-
-.publicity_btncart {
-  width: 12vw;
-  height: 2vw;
-  border-radius: 4vw;
-  background-color: #EF9C00;
-  border-color: #d88e04;
-}
-
-.publicity_btngift {
-  width: 12vw;
-  height: 2vw;
-  border-radius: 4vw;
-  background-color: #B2B4CA;
-  border-color: #8e91ac;
 }
 
 .principal {
@@ -333,6 +317,11 @@ body {
   height: 8.5vw;
   background: none;
   cursor: pointer;
+}
+
+#btn_detail {
+  width: 20vw;
+  height: 6vh;
 }
 
 .product {
@@ -393,6 +382,7 @@ body {
   margin: 1vw;
   padding: 0vw;
   text-decoration: none;
+  font-size: 2vw;
 }
 
 .product_priceb {
@@ -401,12 +391,14 @@ body {
   padding: 0vw;
   text-decoration: line-through;
   color: red;
+  font-size: 1.5vw;
 }
 
 .product_priced {
   font-family: helveticabold;
   margin: 0vw 0vw 1vw 0vw;
   padding: 0vw;
+  font-size: 1.5vw;
 }
 
 .product_buttons {
@@ -421,12 +413,7 @@ body {
 }
 
 .btn_car {
-  width: 4vw;
-  height: 4vw;
-}
-
-.btn_gift {
-  width: 4vw;
+  width: 8vw;
   height: 4vw;
 }
 
@@ -436,8 +423,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0vw;
-  margin: 0vw 3vw 0vw 3vw;
+  background: #070618;
+  padding-bottom: 3vw;
+  margin: 0vw;
 }
 
 .grandoteDetail {
@@ -448,11 +436,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  z-index: 0;
-  width: 99vw;
+  width: 100vw;
   height: 24vh;
   border-radius: 0vw 0vw 1vw vw;
-  background: #070618;
 }
 
 .productDetail {
