@@ -106,37 +106,34 @@ overflow-y:scroll;
     color:#EF9C00;
     text-decoration: underline;
 }
-.navigation_buttons{
-    display: flex;
+.nav_btncart{
+    z-index: 1000;
     position: absolute;
-    flex-direction: row;
-    justify-content: flex-end;
+   right: 60vw;
+   left: 84vw;
+   top: .2vw;
+    
+}
 
-    left: 80vw;
-    top: 4vw;   
-    padding: 0vw;
-    margin: 0vw;
-    
-   
-    
-}
-.nav_btncar{
-    
-    margin: 2vw 0vw 0vw 0vw;
-    background: none;
-    border: none;
-    cursor: pointer;
-  
-   
-}
 
 .nav_imgBtn{
-    margin-top: 50px;
+    margin-top: 2.5vw;
     width: 8vw;
-    height: 4vw;
+    height: 3.5vw;
+    cursor: pointer;
 }
-.nav_countcart{
-    
+.nav_cant{
+    font-family: mulibold;
+    position: absolute;
+    color: #fff;
+    margin: 0vw;
+    padding: 0vw;
+    z-index: 1;
+    left: 4.8vw;
+    top: 3vw;
+    font-size: 1.6vw;
+
+
 }
 
 
@@ -354,4 +351,9 @@ overflow-y:scroll;
     flex-direction: row;
   width:100wv;
   height:70hv;
+}
+.filter{
+    width: 50vw;
+    height: 2hv;
+
 }

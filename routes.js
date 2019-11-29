@@ -82,6 +82,7 @@ function createRoutes (app, db) {
     app.get('/productsDetail/:id', function (req, res) {
         const products = db.collection('products');
         var query= {};        
+        var context;
         products.find({})
         // transformamos el cursor a un arreglo
         .toArray((err, result) => {
@@ -92,6 +93,8 @@ function createRoutes (app, db) {
             for(c;c<result.length;c++){
                 if(req.params.id.toString()===result[c]._id.toString()){
                     //result[c].cartLength= cartList.length,
+                    
+
                     res.render('productsDetail', result[c]);
                 }
                 
@@ -176,6 +179,35 @@ function createRoutes (app, db) {
                 cartSize: cartList.length
             });
             
+        });
+        
+        
+        
+    });
+
+    app.post('/api/cartPorduct/:id', (request,response)=>{
+        var id = request.params.id;
+        
+        var listCopy = cartList.slice();
+        
+        
+        var index=listCopy.length;
+        for(var c=0;c<listCopy.length;c++){
+            if(request.params.id.toString()===listCopy[c]._id.toString()){
+                cartList.splice(c,1);
+            }
+        }
+
+        var price=0;
+        if(listCopy!=null){
+            for(var i=0;i<listCopy.length;i++){
+                price+=listCopy[i].price*listCopy[i].cantidad;
+                
+            }
+        }
+
+        response.send({
+            totalCount: "TOTAL $"+price,
         });
         
         
